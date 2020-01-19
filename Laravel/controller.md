@@ -6,4 +6,5 @@ public function __invoke(){ <br>
     } <br>
     
 - ルート情報の設定<br>
+
 Route::get('アドレス','コントローラ名');
