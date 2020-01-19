@@ -1,9 +1,9 @@
 ## シングルアクションコントローラ
 - 一つのコントローラに一つのアクションだけを用意する設計<br>
 
-public function __invoke(){
-    アクション処理
-    }
+public function __invoke(){ <br>
+    アクション処理<br>
+    } <br>
     
 - ルート情報の設定
 Route::get('アドレス','コントローラ名');
