@@ -4,6 +4,7 @@
 - 基本的に、routesフォルダ内のweb.phpに記述する。  
 
 # ルート情報の記述  
+```php:title
 <?php  
 Route::('アドレス', 関数など{  
   return 処理内容  
