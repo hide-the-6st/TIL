@@ -36,4 +36,4 @@
 - クロスサイトリクエストフォージェリ対策。
 - フォーム内に記述する。
 
-<font color:red;>テキスト</font>
+<font color="Red">テキスト</font>
