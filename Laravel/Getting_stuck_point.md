@@ -10,6 +10,11 @@ Cannot declare class CreateUsersTable, because the name is already in use
 その後、3つのファイルのclass名を元に戻す。
 
 ## シーディングの失敗
+`php artisan db:seed --class=PeopelTableSeeder`  
+↓  
+Target class [PeopelTableSeeder] does not exist.  
+teratailで質問→スペルミスを指摘される。  
+x:Peopel  ○:People
 
 ## 「database is locked」
 
