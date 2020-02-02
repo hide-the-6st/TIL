@@ -9,3 +9,9 @@
     - 呼び出し順に注意が必要。常に一番最後に呼び出す。
  - ページ移動の仕組み
    - {{ simplePaginate(paginate)のインスタンス ->links() }}
+
+## 利用方法
+- DBクラス利用の場合  
+DB::table('テーブル名')->simplePaginate(表示数)
+- モデル利用の場合  
+モデル名::simplePaginate(表示数)
