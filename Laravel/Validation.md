@@ -31,3 +31,15 @@
 ## フォームリクエスト
 - バリデーション機能をリクエスト内に持たせることができる。  
 - php artisan make:request 〇〇Request  
+- `messages`メソッドでは個別の FormRequest クラスの内部でのみ有効なメッセージを定義できます。  
+-  日付の指定の例...  
+```
+public function rules()
+    {
+        return [
+            'due_date' => 'required|date|after_or_equal:today',
+        ];
+    }
+```
+`after_or_equal`（特定の日付と同じまたはそれ以降の日付であること）。  
+引数として`today`を指定することにより、今日を含んだ未来日だけを許容します。  
