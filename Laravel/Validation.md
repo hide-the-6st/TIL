@@ -5,7 +5,7 @@
   - フォームがpost送信された時の処理  
 
 ## エラーメッセージの表示の仕組み
-- @if(count($errors) > 0)  
+- @if(count($errors) > 0)  または  @if($errors->any())  
     ...メッセージの表示処理...  
   @endif  
     
