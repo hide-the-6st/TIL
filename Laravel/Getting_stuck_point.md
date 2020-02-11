@@ -20,3 +20,16 @@ x:Peopel  ○:People
 
 ## 「database disk image is malformed」  
 
+## バリデーションのエラー
+- Failed asserting that an array contains '期限日 には今日以降の日付を入力してください。'.  
+- Illuminate\Contracts\Container\BindingResolutionException: Target class [session.store] does not exist.  
+- 解決方法...assertSessionHasErrorsメソッドの引数が間違っていた？
+```
+$response->assertSessionHasErrors([  
+        'due_date' => '期限日 には今日以降の日付を入力してください。',  
+      ]);  
+↓  
+$response->assertSessionHasErrors(  
+        'due_date', '期限日 には今日以降の日付を入力してください。',  
+      );
+ ```
