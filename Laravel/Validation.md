@@ -5,14 +5,16 @@
   - フォームがpost送信された時の処理  
 
 ## エラーメッセージの表示の仕組み
-- @if(count($errors) > 0)  または  @if($errors->any())  
-    ...メッセージの表示処理...  
-  @endif  
+```
+@if(count($errors) > 0)  または  @if($errors->any())  
     
   @foreach($errors->all() as $error)  
-    ...メッセージの表示...  
+    {{ $error }}...メッセージの表示...  
   @endforeach  
   
+@endif  
+```
+
 - デフォルトではエラーメッセージは英語。
   - 日本語にするには？  
     - `resources/lang`内に、`jp`フォルダを作成。  
