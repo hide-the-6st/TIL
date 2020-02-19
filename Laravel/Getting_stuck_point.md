@@ -34,3 +34,7 @@ $response->assertSessionHasErrors(
         'due_date', '期限日 には今日以降の日付を入力してください。',  
       );
  ```
+
+## Undefined variable: token
+- 原因  
+`public function __construct($token)`の引数の`$token`の記述抜け。
