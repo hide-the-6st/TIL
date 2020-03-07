@@ -35,3 +35,6 @@
 - create a merge commit
 - squash and commit
 - revase and commit
+
+## エラー文
+- Merge made by the 'recursive' strategy.
